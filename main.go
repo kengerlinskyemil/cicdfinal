@@ -1,6 +1,5 @@
 package main
 
-//лаукшпеши//
 import (
 	"database/sql"
 	"fmt"
