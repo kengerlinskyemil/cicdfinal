@@ -12,7 +12,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  # --- Job 1: Проверка и тесты ---
+  # --- Job 1: Проверка и тесты. ---
   test:
     runs-on: ubuntu-latest
     steps:
