@@ -1,5 +1,6 @@
 package main
 
+//вмымаи//
 import (
 	"database/sql"
 	"fmt"
