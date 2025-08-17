@@ -3,16 +3,13 @@ name: CI/CD
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
-    
     tags:
       - "v*"
   pull_request:
-    branches: [ "main" ]
+    branches: [main]
 
 jobs:
-  # --- Job 1: Проверка и тесты. ---
+  # --- Job 1: Проверка и тесты ---
   test:
     runs-on: ubuntu-latest
     steps:
@@ -58,3 +55,4 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/cicdfinal:${{ github.ref_name }}
+
